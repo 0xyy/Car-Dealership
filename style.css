@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #14213d;
+}
+
+.img {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: 450px;
+    background-image: url('./img/img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cars {
+    color: #f1faee;
+}
+
+.img h1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    color: #f1faee;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    padding-top: 150px;
+    font-weight: normal;
+}
+
+.car-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.car-list li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.car-list strong {
+    padding-right: 10px;
+}
+
+.car-list button {
+    font-size: 2rem;
+    margin-left: 30px;
+    padding: 3px 35px;
+    color: #f1faee;
+    text-transform: uppercase;
+    background-color: #14213d;
+    border: 2px solid #f1faee;
+    border-radius: 40px;
+    transition: .3s;
+    letter-spacing: 2px;
+}
+
+.car-list button:hover {
+    border: 2px solid #f1faee;
+    background-color: #f1faee;
+    color: #14213d;
+}
+
+.basket {
+    color: #f1faee;
+}
+
+.basket h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.basket ul {
+    list-style-type: none;
+}
+
+.basket li {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.btn-buy-all {
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 7px 35px;
+    color: #f1faee;
+    text-transform: uppercase;
+    background-color: #14213d;
+    border: 2px solid #f1faee;
+    border-radius: 40px;
+    transition: .3s;
+    letter-spacing: 2px;
+}
+
+.btn-buy-all:hover {
+    background-color: #f1faee;
+    color: #14213d;
+}
+
+.admin {
+    margin: 50px 0;
+}
+
+.admin h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: #f1faee;
+}
+
+.form-add-car {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+input {
+    font-size: 1.5rem;
+    width: 310px;
+    color: #14213d;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.submit-admin {
+    color: #14213d;
+    background-color: #f1faee;
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    transition: .3s;
+    border: 2px solid #14213d;
+}
+
+.submit-admin:hover {
+    background-color: #14213d;
+    border-color: #f1faee;
+    color: #f1faee;
+}

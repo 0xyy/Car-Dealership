@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cracow Car Dealership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="img">
+        <h1>Cracow Dealership</h1>
+    </div>
+    <section class="cars">
+        <ul class="car-list">
+            <li>
+                <strong>Mercedes-Benz AMG CLA45s Coupé 4MATIC+</strong> - 320000.00zł. <button class="btn-buy-product"
+                    data-mark="Mercedes-Benz AMG" data-model="CLA45s Coupé 4MATIC+" data-price="320000.00">Buy!</button>
+            </li>
+            <li>
+                <strong>Volvo XC60</strong> - 210600.00zł. <button class="btn-buy-product" data-mark="Volvo"
+                    data-model="XC60" data-price="210600.00">Buy!</button>
+            </li>
+            <li>
+                <strong>Mercedes-Benz AMG GLC43 Coupé 4MATIC+</strong> - 390500.00zł. <button class="btn-buy-product"
+                    data-mark="Mercedes-Benz AMG" data-model="GLC43 Coupé 4MATIC+" data-price="390500.00">Buy!</button>
+            </li>
+            <li>
+                <strong>BMW X6</strong> - 570900.00zł. <button class="btn-buy-product" data-mark="BMW" data-model="X6"
+                    data-price="570900.00">Buy!</button>
+            </li>
+            <li>
+                <strong>Mercedes-Benz A220</strong> - 130100.00zł. <button class="btn-buy-product"
+                    data-mark="Mercedes-Benz" data-model="A220" data-price="130100.00">Buy!</button>
+            </li>
+        </ul>
+    </section>
+    <section class="basket">
+        <h1>Basket</h1>
+        <ul class="basket-list"></ul>
+        <button class="btn-buy-all" disabled>Submit your order</button>
+    </section>
+    <section class="admin">
+        <h1>Admin panel</h1>
+        <form class="form-add-car">
+            <input type="text" name="car-mark" placeholder="Podaj markę samochodu" required>
+            <input type="text" name="car-model" placeholder="Podaj model samochodu" required>
+            <input type="number" name="car-price" placeholder="Podaj cenę samochodu" required>
+            <button class="submit-admin" type="submit">Add to car list</button>
+        </form>
+    </section>
+
+    <script src="src/carDealership.js"></script>
+    <script src="src/ui.js"></script>
+    <script src="src/admin-ui.js"></script>
+</body>
+
+</html>
